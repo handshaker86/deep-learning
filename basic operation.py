@@ -15,3 +15,6 @@ print(torch.cat((X, Y), dim=0))   # use cat to combine two tensor , dim=0 repres
 print(torch.cat((X, Y), dim=1))
 print(X==Y) # logical mask
 print(X[:,0:2])  # column 0 and 1 
+u = torch.arange(24).reshape(2,3,4)
+print(len(u))
+print(u.shape)
