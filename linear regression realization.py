@@ -58,7 +58,7 @@ def sgd(params, lr, batch_size): #@save
     """小批量随机梯度下降"""
     with torch.no_grad():    # 在该模块下，所有计算得出的tensor的requires_grad都自动设置为False。
         for param in params:
-            param -= lr * param.grad / batch_size
+            param -= lr * param.grad / batch_size   # 此处lr表示学习率
             param.grad.zero_()
 
 """3.2.7 训练"""
