@@ -33,3 +33,4 @@ num_epochs = 10
 d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer) # 调用 3.6节中定义的训练函数来训练模型()
 d2l.plt.show()
 
+
